@@ -30,10 +30,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if ($(this).hasClass('less')) {
       hideItems()
       $(this).text('Больше').removeClass('less');
+      $('.item__shadow').show()
     } else {
-      console.log(this)
       $('li.toggleable').removeClass('toggleable').show();
       $(this).text('Меньше').addClass('less');
+      $('.item__shadow').hide()
     }
   });
 

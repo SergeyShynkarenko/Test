@@ -17,11 +17,12 @@ $systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font
 $grid-gutter-width: 30px
 $gutter: $grid-gutter-width
 $form-floating-height: 50px
-$form-floating-input-padding-t: 17px
+$form-floating-input-padding-t: 15px
 $form-floating-input-padding-b: 6px
 $form-floating-padding-x: 20px
 $input-padding-x: 20px
 $form-floating-padding-y: 14px
+$form-floating-label-transform: scale(.7) translateY(-0.5rem) translateX(0.5rem)
 
 $form-select-bg-size: 10px 7px
 $form-select-indicator: url('../images/dist/down.svg')
@@ -132,9 +133,8 @@ input, textarea, select
 
 
 .form-select ~ label
-	font-size: 12px
-	line-height: 1.21
 	color: $inputcolor
+	font-size: 12px
 
 .form-floating > label
 	color: $inputcolor
